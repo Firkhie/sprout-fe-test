@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+
+  h1 {
+    @apply lg:text-3xl md:text-2xl text-xl font-semibold;
+  }
+
+  h2 {
+    @apply lg:text-xl md:text-lg text-base font-semibold;
+  }
+}
+
+/* Loading Animation */
+.loader-xbox {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
+
+.loader-xbox,
+.loader-xbox:before,
+.loader-xbox:after {
+  position: absolute;
+  border: 4px solid transparent;
+  border-top: 4px solid hsl(24, 82%, 53%);
+  border-radius: 50%;
+  animation: rotate linear infinite;
+  content: "";
+}
+
+.loader-xbox {
+  height: 100px;
+  width: 100px;
+  animation-duration: 1.05s;
+}
+
+.loader-xbox:before {
+  height: 75px;
+  width: 75px;
+  top: 10px;
+  left: 10px;
+  animation-duration: 10s;
+}
+
+.loader-xbox:after {
+  height: 50px;
+  width: 50px;
+  top: 22px;
+  left: 22px;
+  animation-duration: 4s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+/* Pokemon Background Color */
+.fire {
+  background-color: rgb(253, 108, 108);
+}
+
+.water {
+  background-color: rgb(119, 190, 254);
+}
+
+.grass {
+  background-color: rgb(72, 208, 176);
+}
+
+.electric {
+  background-color: rgba(255, 215, 0, 0.7);
+}
+
+.ice {
+  background-color: rgba(135, 206, 235, 0.7);
+}
+
+.fighting {
+  background-color: rgba(255, 69, 0, 0.7);
+}
+
+.normal {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.flying {
+  background-color: rgba(70, 130, 180, 0.7);
+}
+
+.bug {
+  background-color: rgba(85, 107, 47, 0.7);
+}
+
+.rock {
+  background-color: rgba(139, 69, 19, 0.7);
+}
+
+.ground {
+  background-color: rgba(139, 69, 19, 0.7);
+}
+
+.steel {
+  background-color: rgba(67, 67, 67, 0.7);
+}
+
+.poison {
+  background-color: rgba(153, 50, 204, 0.7);
+}
+
+.psychic {
+  background-color: rgba(75, 0, 130, 0.7);
+}
+
+.dragon {
+  background-color: rgba(139, 0, 0, 0.7);
+}
+
+.dark {
+  background-color: rgba(47, 79, 79, 0.7);
+}
+
+.fairy {
+  background-color: rgba(255, 105, 180, 0.7);
+}
+
+.ghost {
+  background-color: rgba(202, 184, 255, 0.7);
+}
